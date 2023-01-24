@@ -2,23 +2,23 @@
 
 set -e
 
-echo "What is the name of the new chapter? (e.g, Mathematical Background)"
+echo "What is the name of the new document? (e.g, Interpolation for PDL)"
 
-read chaptername
+read documentname
 
-chapter="${chaptername// /-}"
+document="${documentname// /-}"
 
-mkdir $chapter
-mkdir $chapter/images
-touch $chapter/macros.tex
-touch $chapter/$chapter.tex
+mkdir $document
+mkdir $document/images
+touch $document/macros.tex
+touch $document/$document.tex
 
-echo """\section{$chaptername}
-""" >> $chapter/$chapter.tex
+echo """\section{$documentname}
+""" >> $document/$document.tex
 
 echo """
 {
-    \graphicspath{ {./$chapter/images/} }
-    \input{$chapter/macros}
-    \input{$chapter/$chapter}
+    \graphicspath{ {./$document/images/} }
+    \input{$document/macros}
+    \input{$document/$document}
 }""" >> content.tex
