@@ -13,12 +13,11 @@ mkdir $chapter/images
 touch $chapter/macros.tex
 touch $chapter/$chapter.tex
 
-echo """\section{Introduction}
+echo """\section{$chaptername}
 """ >> $chapter/$chapter.tex
 
 echo """
 {
-    \chapter{$chaptername}
     \graphicspath{ {./$chapter/images/} }
     \input{$chapter/macros}
     \input{$chapter/$chapter}
