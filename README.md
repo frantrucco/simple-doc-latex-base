@@ -1,13 +1,13 @@
 # How to create a new chapter
 
-To create a new chapter simply run:
+To create a new section simply run:
 
 ```
-./new-chapter.sh
+./new-section.sh
 ```
 
 If this does not work check that the path to bash is correct in the file
-`new-chapter.sh` (the first line).
+`new-section.sh` (the first line).
 
 # Structure of the notes
 

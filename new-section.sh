@@ -2,7 +2,7 @@
 
 set -e
 
-echo "What is the name of the new document? (e.g, Interpolation for PDL)"
+echo "What is the name of the new section? (e.g, Interpolation for PDL)"
 
 read documentname
 
